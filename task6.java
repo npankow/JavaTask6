@@ -1,3 +1,4 @@
+import java.util.*;
 class PhoneBook {
     private HashMap<String, HashSet<String>> phoneBook = new HashMap<>();
      public void addContact(String name, String phoneNumber) {
@@ -10,6 +11,7 @@ class PhoneBook {
             phoneBook.put(name, phoneNumbers);
         }
     }
+    //Выводим содержимое телефонной книги, отсортированное по убыванию количества телефонных номеров
 public void showPhoneBook() {
         List<Map.Entry<String, HashSet<String>>> sortedEntries = new ArrayList<>(phoneBook.entrySet());
 
