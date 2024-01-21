@@ -21,3 +21,16 @@ public void showPhoneBook() {
         }
     }
 }
+public class task6 {
+    public static void main(String[] args) {
+        PhoneBook phoneBook = new PhoneBook();
+
+        phoneBook.addContact("John", "123456");
+        phoneBook.addContact("Alice", "789012");
+        phoneBook.addContact("John", "345678");
+        phoneBook.addContact("Bob", "901234");
+        phoneBook.addContact("Alice", "567890");
+
+        phoneBook.showPhoneBook();
+    }
+}
